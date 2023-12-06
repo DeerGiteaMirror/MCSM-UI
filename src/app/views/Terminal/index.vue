@@ -266,6 +266,24 @@
           </template>
         </Panel>
         <Panel>
+          <template #title>{{ $t("instances.helpInfo") }}</template>
+          <template #default>
+            <div v-if="!available">
+              <el-skeleton :rows="5" animated></el-skeleton>
+            </div>
+            <div v-else>
+              <LineInfo>1. 上传并解压你的服务端；</LineInfo>
+              <LineInfo>2. 在跟目录手动创建 start.sh 脚本；</LineInfo>
+              <LineInfo>3. 在 start.sh 中写入启动命令；</LineInfo>
+              <LineInfo>4. 运行即可；</LineInfo>
+              
+              <LineInfo>  注意事项：</LineInfo>
+              <LineInfo>1. 脚本内需要指明java版本，如java8、java11；</LineInfo>
+              <LineInfo>2. 目前支持java8、java11、java17、java18、java21；</LineInfo>
+            </div>
+          </template>
+        </Panel>
+        <Panel>
           <template #title>{{ $t("instances.detailsInfo") }}</template>
           <template #default>
             <div v-if="!available">
