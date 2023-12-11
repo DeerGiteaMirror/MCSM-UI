@@ -84,6 +84,10 @@
                   v-else-if="instanceInfo.status === 3"
                   class="color-green"
                 >{{ $t("instances.status.running") }}</span>
+                <span
+                  v-else-if="instanceInfo.status === 4"
+                  class="color-yellow"
+                >{{ $t("home.sleeping") }}</span>
                 <span v-else class="color-red">{{ $t("terminal.unknown") }}</span>
               </LineInfo>
               <LineInfo v-if="instanceInfo.info && instanceInfo.info.currentPlayers != -1">
@@ -118,7 +122,7 @@
                     </template>
                   </el-popconfirm>
                 </el-col>
-                <el-col :lg="24" v-show="instanceInfo.status === 3">
+                <el-col :lg="24" v-show="instanceInfo.status === 3 || instanceInfo.status === 4">
                   <el-popconfirm :title="$t('terminal.confirmOperate')" @confirm="stopInstance">
                     <template #reference>
                       <el-button
@@ -142,7 +146,7 @@
                     </template>
                   </el-popconfirm>
                 </el-col>
-                <el-col :lg="24" v-show="instanceInfo.status > 0">
+                <el-col :lg="24" v-show="instanceInfo.status > 0 && instanceInfo.status !== 4">
                   <el-popconfirm :title="$t('terminal.confirmOperate')" @confirm="killInstance">
                     <template #reference>
                       <el-button

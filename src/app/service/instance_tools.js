@@ -15,6 +15,7 @@ export function statusCodeToText(statusCode) {
   if (statusCode == 1) statusText = $t("home.stopping");
   if (statusCode == 2) statusText = $t("home.starting");
   if (statusCode == 3) statusText = $t("home.running");
+  if (statusCode == 4) statusText = $t("home.sleeping");
   return statusText;
 }
 

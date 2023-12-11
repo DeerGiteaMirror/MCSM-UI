@@ -55,6 +55,10 @@
     "053": "Терминал",
     "054": "Консоль"
   },
+  "OnDemand":{
+    "title": "On Demand Start Up",
+    "titleInfo": "Automatically start the server when there are players online, and automatically shut down when there are no players online."
+  },
   "general": {
     "search": "Поиск",
     "searchName": "Поиск по имени",
@@ -198,7 +202,8 @@
       "running": "Запущен",
       "stopping": "Остановка",
       "starting": "Запускается",
-      "busy": "Занятый"
+      "busy": "Занятый",
+      "sleeping": "Спящий"
     },
     "card": {
       "editConfig": "Изменить конфигурацию",
@@ -944,7 +949,8 @@
     "unknownStatus": "Неизвестный статус",
     "updateSuccess": "Обновить успешно",
     "admin": "Администратор",
-    "user": "Обычный пользователь"
+    "user": "Обычный пользователь",
+    "sleeping": "Спящий"
   },
   "quickStart": {
     "title": "Что бы вы хотели, чтобы MCSManager делал?",
