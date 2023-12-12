@@ -86,8 +86,17 @@
                 >{{ $t("instances.status.running") }}</span>
                 <span
                   v-else-if="instanceInfo.status === 4"
-                  class="color-yellow"
-                >{{ $t("home.sleeping") }}</span>
+                  class="color-deep-green"
+                >
+                  <el-tooltip
+                    effect="dark"
+                    placement="right"
+                    :content="$t('OnDemand.titleInfo')"
+                  > 
+                    <span>{{ $t("home.sleeping") }} <i class="el-icon-question"></i></span> 
+                  </el-tooltip>
+                </span>
+                
                 <span v-else class="color-red">{{ $t("terminal.unknown") }}</span>
               </LineInfo>
               <LineInfo v-if="instanceInfo.info && instanceInfo.info.currentPlayers != -1">
