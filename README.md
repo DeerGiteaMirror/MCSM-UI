@@ -11,6 +11,8 @@
 
 Please go to main project repository: [https://github.com/MCSManager/MCSManager](https://github.com/MCSManager/MCSManager)
 
+Fork for self brand.
+
 <br />
 
 ## Build the development environment

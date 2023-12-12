@@ -247,7 +247,7 @@ Copyright (C) 2022 MCSManager <mcsmanager-dev@outlook.com>
                   </el-date-picker>
                 </el-col>
 
-                <el-col :lg="8" class="row-mt" :offset="0" v-iszh>
+                <el-col :lg="4" class="row-mt" :offset="0" v-iszh>
                   <div class="sub-title">
                     <div class="sub-title-title">{{ $t("CommonText.012") }}</div>
                     <div class="sub-title-info">{{ $t("components.NetworkTip.018") }}</div>
@@ -255,6 +255,16 @@ Copyright (C) 2022 MCSManager <mcsmanager-dev@outlook.com>
                   <el-button plain size="big" @click="openNetwork">{{
                     $t("general.read")
                   }}</el-button>
+                </el-col>
+
+                <el-col :lg="4" class="row-mt" :offset="0" v-iszh>
+                  <div class="sub-title">
+                    <div class="sub-title-title">{{ $t("OnDemand.title") }}</div>
+                    <div class="sub-title-info">{{ $t("OnDemand.titleInfo") }}</div>
+                  </div>
+                  <div class="row-mt">
+                    <el-switch v-model="instanceInfo.config.onDemand"></el-switch>
+                  </div>
                 </el-col>
 
                 <el-col :lg="24" class="row-mt">

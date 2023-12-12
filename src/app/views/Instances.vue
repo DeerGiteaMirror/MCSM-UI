@@ -234,6 +234,9 @@
               <span class="color-yellow" v-else-if="item.status == 1">{{
                 $t("instances.status.stopping")
               }}</span>
+              <span class="color-deep-green" v-else-if="item.status == 4">{{
+                $t("instances.status.sleeping")
+              }}</span>
               <span class="color-yellow" v-else-if="item.status == 2">{{
                 $t("instances.status.starting")
               }}</span>
@@ -327,6 +330,9 @@
                 }}</span>
                 <span class="color-yellow" v-else-if="scope.row.status == 2">{{
                   $t("instances.status.starting")
+                }}</span>
+                <span class="color-yellow" v-else-if="scope.row.status == 4">{{
+                  $t("instances.status.sleeping")
                 }}</span>
 
                 <span class="color-red" v-else-if="scope.row.status == -1">{{

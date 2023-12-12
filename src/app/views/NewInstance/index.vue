@@ -347,9 +347,9 @@ export default {
       TYPE_MINECRAFT_BEDROCK,
       form: {
         nickname: "",
-        startCommand: "sh ./start.sh",
+        startCommand: "",
         stopCommand: "^c",
-        cwd: "/servers/",
+        cwd: "",
         ie: "GBK",
         oe: "GBK",
         createDatetime: new Date().toDateString(),

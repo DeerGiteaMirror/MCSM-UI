@@ -55,6 +55,10 @@
     "053": "命令终端",
     "054": "控制台"
   },
+  "OnDemand":{
+    "title": "按需启动",
+    "titleInfo": "在没有玩家连接时自动关闭服务器，有活动时自动开启"
+  },
   "general": {
     "search": "搜索",
     "searchName": "根据名称搜索",
@@ -188,7 +192,6 @@
     "endTime": "到期时间",
     "otherInfo": "其他信息",
     "detailsInfo": "详细信息",
-    "helpInfo": "帮助信息",
     "playerCount": "人数",
     "mcVersion": "版本",
     "status": {
@@ -198,7 +201,8 @@
       "running": "运行中",
       "stopping": "停止中",
       "starting": "启动中",
-      "busy": "忙碌"
+      "busy": "忙碌",
+      "sleeping": "休眠"
     },
     "card": {
       "editConfig": "编辑配置",
@@ -2211,7 +2215,8 @@
     "unknownStatus": "未知状态",
     "updateSuccess": "更新成功",
     "admin": "管理用户",
-    "user": "普通用户"
+    "user": "普通用户",
+    "sleeping": "休眠中"
   },
   "quickStart": {
     "title": "您希望使用 MCSManager 面板做什么？",

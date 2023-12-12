@@ -55,6 +55,10 @@
     "053": "Terminal",
     "054": "Console"
   },
+  "OnDemand":{
+    "title": "On Demand Start Up",
+    "titleInfo": "Automatically start the server when there are players online, and automatically shut down when there are no players online."
+  },
   "general": {
     "search": "Search",
     "searchName": "Search by name",
@@ -188,7 +192,6 @@
     "endTime": "Expire date",
     "otherInfo": "Comments",
     "detailsInfo": "Detailed Info",
-    "helpInfo": "Help Info",
     "playerCount": "Number of player(s)",
     "mcVersion": "Minecraft Version",
     "status": {
@@ -198,7 +201,8 @@
       "running": "Running",
       "stopping": "Stopping",
       "starting": "Starting",
-      "busy": "Busy"
+      "busy": "Busy",
+      "sleeping": "Sleeping"
     },
     "card": {
       "editConfig": "Edit Configuration",
@@ -2211,7 +2215,8 @@
     "unknownStatus": "Unknown Status",
     "updateSuccess": "Update Success",
     "admin": "Administrator",
-    "user": "Normal User"
+    "user": "Normal User",
+    "sleeping": "Sleeping"
   },
   "quickStart": {
     "title": "What would you like MCSManager to do?",
