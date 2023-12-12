@@ -2,7 +2,7 @@
   <div>
     <Panel v-menus:right="menus">
       <template #title>
-        <span id="fileManagerTop">{{ $t("fileManager.title") }}</span>
+        <span id="fileManagerTop">{{ $t("fileManager.title") }} - 单文件最大限制 1G 如超出请分批次上传</span>
       </template>
       <template #default>
         <div>

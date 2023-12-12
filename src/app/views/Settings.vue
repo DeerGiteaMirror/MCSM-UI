@@ -171,7 +171,7 @@
           </p>
         </div>
 
-        <div class="contributors" v-if="sponsorList" v-iszh>
+        <!-- <div class="contributors" v-if="sponsorList" v-iszh>
           <div class="sub-title">
             <p class="sub-title-title">{{ $t("settings.sponsorList") }}</p>
             <p class="sub-title-info">
@@ -202,7 +202,7 @@
               </div>
             </el-col>
           </el-row>
-        </div>
+        </div> -->
       </template>
     </Panel>
   </div>
