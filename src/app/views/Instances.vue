@@ -176,7 +176,7 @@
       <Panel
         :class="{
           instanceStatusGreen: item.status === 3 || item.status === 4,
-          instanceStatusGray: item.status !== 3,
+          instanceStatusGray: item.status !== 3 && item.status !== 4,
           runningInstanceCard: true
         }"
         :tipType="0"
