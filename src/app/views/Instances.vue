@@ -175,7 +175,7 @@
     <el-col :md="6" :offset="0" v-for="(item, index) in instances" :key="index">
       <Panel
         :class="{
-          instanceStatusGreen: item.status === 3,
+          instanceStatusGreen: item.status === 3 || item.status === 4,
           instanceStatusGray: item.status !== 3,
           runningInstanceCard: true
         }"
